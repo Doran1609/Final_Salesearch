@@ -40,6 +40,7 @@ $navbar-new-bg: #000066;
 
 }
 
+/* -------------------- LOGO ------------------- */
 .center{
 	text-align: center;
 }
@@ -52,44 +53,9 @@ $navbar-new-bg: #000066;
     height: 180px;
     padding: 8px;
     
-	
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------- END ------------------- */
 
 
 
@@ -195,6 +161,17 @@ $navbar-new-bg: #000066;
 	font-weight: bold;
 	font-size: 1.5em;
 	text-align: center;
+	background-color: transparent;
+	color: red;
+	
+	
+}
+
+.one a:hover {
+
+	background-color: transparent;
+	color: red;
+	text-decoration:underline;
 	
 }
 
@@ -211,9 +188,17 @@ $navbar-new-bg: #000066;
 
 .buybtn {
 	border-top: 1px solid #eaeaea;
-	padding-top: 10px;
+	padding-top: -10px;
 	text-align: center;
 }
+
+.buybtn a:hover
+{
+	background-color: transparent;
+	color: red;
+	text-decoration:underline;
+}
+
 
 .container
 {
@@ -229,6 +214,7 @@ $navbar-new-bg: #000066;
 
 #footer a:hover
 {
+	background-color: transparent;
 	color: yellow;
 	text-decoration:underline;
 }

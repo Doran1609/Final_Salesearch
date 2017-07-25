@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'site#contact'
   get 'track', to: 'site#track'
   get 'companies', to: 'items#show'
+  get 'items', to: 'items#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
