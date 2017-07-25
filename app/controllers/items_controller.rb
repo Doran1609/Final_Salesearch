@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
-  
+  before_filter :authenticate_user!
+  before_filter :ensure_admin, :only => [:edit, :destroy]
 # GET /companies/1/items
   def index
     # For URL like /companies/1/items
@@ -76,6 +77,12 @@ class ItemsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to company_items_path(@company) }
       format.xml { head :ok }
+    end
+  end
+  
+  def ensure_admin
+    unless current_user && current_user.admin?
+      render :text => "Access Error Message", :status => :unauthorized
     end
   end
 

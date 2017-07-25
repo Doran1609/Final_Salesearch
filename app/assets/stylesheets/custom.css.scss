@@ -40,11 +40,25 @@ $navbar-new-bg: #000066;
 
 }
 
-.jumbotron {
-	background_size: cover;
-	height: 20px;
-	
+.center{
+	text-align: center;
 }
+.jumbotron {
+	
+	background-color: white;
+	position:relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+    height: 180px;
+    padding: 8px;
+    
+	
+} 
+
+
+
+
+
 
 /*.one 
 {
